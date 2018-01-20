@@ -1,10 +1,10 @@
+# Project: Project3 - Selective Overhead Mirroring System
+
+Project Developer: Georgios Kamaras - sdi1400058
+
 Course: K24 Systems Programming, Spring 2017
 
 Date: 31/05/2017
-
-Project: Project3 - Selective Overhead Mirroring System
-
-Project Developer: Georgios Kamaras - sdi1400058
 
 Development Platform:
 *	GNU/Linux Ubuntu 16.04
@@ -34,20 +34,16 @@ Included Files:
 *	(and README)
 
 Compilation:
-	use "make" command
+	use ```make``` command
 
 Cleaning:
-	use "make clean" command
+	use ```make clean``` command
 
 Usage:
-*	(1) first, run the content server(s) and the mirror server using the commands:
-	"./ContentServer -p <port> -d <dirorfilename>" and "./MirrorServer -p <port> -m <dirname> -w <threadnum>",
-	e.g. "./ContentServer -p 15100 -d test-dir1" and "./MirrorServer -p 15000 -m mydir -w 5"
-*	(2) then, run the mirror initiator using the command:
-	"./MirrorInitiator -n <MirrorServerAddress> -p <MirrorServerPort>
-	-s <ContentServerAddress1:ContentServerPort1:dirorfile1:delay1,
-	ContentServerAddress2:ContentServerPort2:dirorfile2:delay2, ...>",
-	e.g. "./MirrorInitiator -n localhost -p 15000 -s localhost:15100:test-dir1/libraries/:1 localhost:15200:test-dir2:2"
+*	(1) first, run the content server(s) and the mirror server using the commands: ```./ContentServer -p <port> -d <dirorfilename>``` and ```./MirrorServer -p <port> -m <dirname> -w <threadnum>```,
+	e.g. ```./ContentServer -p 15100 -d test-dir1``` and ```./MirrorServer -p 15000 -m mydir -w 5```
+*	(2) then, run the mirror initiator using the command: ```./MirrorInitiator -n <MirrorServerAddress> -p <MirrorServerPort> -s <ContentServerAddress1:ContentServerPort1:dirorfile1:delay1, ContentServerAddress2:ContentServerPort2:dirorfile2:delay2, ...>```,
+	e.g. ```./MirrorInitiator -n localhost -p 15000 -s localhost:15100:test-dir1/libraries/:1 localhost:15200:test-dir2:2```
 
 Technical Details:
 *	For my implementation I followed all of the exercise's specifications both in paper and on Piazza.
