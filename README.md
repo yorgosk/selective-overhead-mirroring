@@ -34,10 +34,10 @@ Development Platform:
 *	(and README)
 
 ## Compilation
-	Use ```make``` command
+Use ```make``` command
 
 ## Cleaning
-	Use ```make clean``` command
+Use ```make clean``` command
 
 ## Usage
 *	(1) first, run the content server(s) and the mirror server using the commands: ```./ContentServer -p <port> -d <dirorfilename>``` and ```./MirrorServer -p <port> -m <dirname> -w <threadnum>```,
